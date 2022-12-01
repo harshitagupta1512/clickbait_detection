@@ -18,3 +18,35 @@ Full dataset can be found [here](https://zenodo.org/record/5530410)
 ### Fake News Challenge
 Full dataset can be found [here](https://github.com/FakeNewsChallenge/fnc-1.git)
 
+## Loading and Preprocessing
+
+### Clickbait Challange
+The dataset is in json Lines format, which contains the following fields:
+```python
+['id', 'postMedia', 'targetCaptions', 'postText', 'postTimestamp', 'targetTitle', 'targetDescription', 'targetKeywords', 'targetParagraphs', 'appendedTargetParagraphs','truthClass']
+```
+
+out of which we are interested in the following fields:
+```python
+['targetTitle', 'targetParagraphs', 'truthClass']
+```
+
+during preprocessing we remove the punctuations and stopwords from the text and convert the text to lower case next we perform stemming on the text.
+
+This stemmed data is then used to create the word embeddings using the sentence_transformers library.
+
+### Fake News Challenge
+The dataset is in CSV format, which contains the following fields:
+```python
+['Body ID', 'articleBody','Headline', 'Body ID', 'Stance']
+```
+out of wich we are interested in the following fields:
+```python
+['articleBody', 'Headline', 'Stance']
+```
+
+during preprocessing we remove the punctuations and stopwords from the text and convert the text to lower case next we perform stemming on the text similar to the clickbait challange.
+
+This stemmed data is then used to create the word embeddings using the sentence_transformers library.
+
+
