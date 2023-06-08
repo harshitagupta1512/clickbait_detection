@@ -49,4 +49,20 @@ during preprocessing we remove the punctuations and stopwords from the text and 
 
 This stemmed data is then used to create the word embeddings using the sentence_transformers library.
 
-
+## Work Distribution
+- Preprocess FNC data - Siddharth
+- Preprocess Clickbait dataset - Siddharth
+- Implement vectorization - Harshita
+- Encodings for FNC data - Dhruv, Siddharth
+- Encodings for Clickbait data - Naval, Siddharth
+- Map encodings for stances and bodies - Harshita
+- Implement Bidirectional GRU layer - Naval, Dhruv
+- Implement Attention with context layer - Naval, Harshita
+- Global Similarity - Harshita
+- Local Similarity - Harshita, Siddharth
+- Train model (Learning the similarities) - Naval, Dhruv
+- Preprocessing and encoding test data - Dhruv
+- Testing the model - Naval, Dhruv
+- Comparison with baseline methods - Harshita, Siddharth
+- Report - Harshita, Siddharth, Dhruv
+- Presentation - Harshita, Siddharth, Dhruv
